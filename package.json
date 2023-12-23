@@ -4,7 +4,8 @@
   "description": "mix master app using react react-query react-router-dom",
   "scripts": {
     "start": "npx parcel index.html",
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build index.html"
   },
   "keywords": [
     "react",
