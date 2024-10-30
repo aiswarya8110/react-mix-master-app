@@ -15,7 +15,7 @@ const CocktailList = ({ drinks })=>{
     })
     return (
         <Wrapper>
-            {formattedDrinks.map((drink)=>(
+            {formattedDrinks?.map((drink)=>(
                 <CocktailCard drink={drink} key={drink.id} />
             ))}
         </Wrapper>

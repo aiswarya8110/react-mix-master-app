@@ -10,7 +10,7 @@ const searchCocktailsQuery = (searchTerm)=>{
     return {
         queryKey: ["search", searchTerm || 'all'],
         queryFn: async()=> {
-           const response = await axiosFetch.get(`/search.php?s=${!searchTerm ? '' : searchTerm}`);
+           const response = await axiosFetch.get(`/search.php?s=${!searchTerm ? 'all' : searchTerm}`);
            return response.data.drinks
         },
         staleTime: 1000 * 60 * 5 
@@ -40,7 +40,3 @@ const Landing = ()=>{
 }
 
 export default Landing;
-
-
-// search, all
-// searchTerm
